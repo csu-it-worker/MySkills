@@ -109,15 +109,20 @@ function getDeviceModel(): string {
 
 ## 四、生命周期规范
 
-生命周期是特殊的事件钩子，uni-app x 为应用、页面、组件分别提供了生命周期：
-
-| 层级 | 说明 | 详细文档 |
-|------|------|----------|
-| **应用生命周期** | 应用启动、显示、隐藏等事件 | [详见文档](/uni-app-x/collocation/app.html#applifecycle) |
-| **页面生命周期** | 页面加载、显示、隐藏、卸载等事件 | [详见文档](/uni-app-x/page.html#lifecycle) |
-| **组件生命周期** | 组件创建、挂载、更新、卸载等事件 | [详见文档](/uni-app-x/vue/component.html#component-lifecycle) |
+生命周期是特殊的事件钩子，uni-app x 为应用、页面、组件分别提供了不同层级的生命周期：
 
 > 注意：`uni.onXX()` 和 `uni.offXX()` 形式的事件监听API不属于生命周期范畴。
+
+### 分类文档
+
+- **应用生命周期**：[详见应用生命周期规范](./api-lifecycle/application-lifecycle.md)
+  - 应用启动、显示、隐藏、错误处理等全局事件
+
+- **页面生命周期**：[详见页面生命周期规范](./api-lifecycle/page-lifecycle.md)
+  - 页面加载、显示、隐藏、卸载、下拉刷新、上拉触底等页面事件
+
+- **组件生命周期**：[详见组件生命周期规范](./api-lifecycle/component-lifecycle.md)
+  - 组件创建、挂载、更新、卸载等组件级生命周期，同时支持选项式API和组合式API
 
 ---
 
